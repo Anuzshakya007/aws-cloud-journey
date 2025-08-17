@@ -62,17 +62,39 @@ footer {
   font-size: 0.9rem;
 }
 
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: start;
+  align-items: center;
+}
+
+.badges img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.badges img:hover {
+  transform: scale(1.2);
+}
+
+
    </style>
 </head>
 <body>
   <header>
     <div class="container">
       <h1>Anuj Shakya</h1>
-      <p>IT Support | Cybersecurity Enthusiast | Cloud Learner</p>
+      <p>IT Support Technician | Cybersecurity Enthusiast | Cloud Learner</p>
       <nav>
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -83,37 +105,87 @@ footer {
   <section id="about" class="container">
     <h2>About Me</h2>
     <p>
-      Hi, I'm Anuj Shakya — an enthusiastic and result-driven IT professional based in North Parramatta, Australia. With over 2 years of experience, I specialize in IT Support, Cybersecurity, and Cloud Computing. I currently work at Woolworths Group as Assistant Department Manager and hold a Master's in IT. I'm certified in Microsoft Azure (AZ-900) and actively involved in the Australian Information Security Association (AISA).
+      I'm a proactive and experienced IT Support Technician with 4 years of experience in IT support, software development, and cybersecurity. Based in North Parramatta, Australia, I specialize in Office 365, Active Directory, Teams, Windows 10/11, Linux, AWS, and device management. I'm passionate about keeping systems secure and delivering high-quality tech support to users.
     </p>
   </section>
 
   <section id="skills" class="container">
     <h2>Technical Skills</h2>
     <ul class="skills">
-      <li>Windows 10/11, Office 365, Teams</li>
-      <li>Active Directory, Azure, Microsoft Defender</li>
-      <li>Jira, Hyper-V, Intune, TeamViewer</li>
-      <li>Networking: DNS, TCP/IP, VPN, VoIP</li>
-      <li>Linux, SaltStack, Python</li>
-      <li>JavaScript, Java, ReactJS</li>
-      <li>Monitoring, Reporting, Troubleshooting</li>
+      <li><strong>Microsoft Tech:</strong> Office 365, AD, Teams, Defender, Windows 10/11</li>
+      <li><strong>Cloud:</strong> AWS (EC2, S3, IAM, VPC)</li>
+      <li><strong>OS:</strong> Windows, Linux (RedHat, EL7/EL8), MacOS</li>
+      <li><strong>Virtualization:</strong> VMware</li>
+      <li><strong>Device Management:</strong> Kandji MDM, Salt</li>
+      <li><strong>Security:</strong> RBAC, ISO 27001</li>
+      <li><strong>Networking:</strong> TCP/IP, VPN, DNS, Wireless, VoIP</li>
+      <li><strong>Languages:</strong> Python, Bash, JavaScript, Java, PHP</li>
     </ul>
   </section>
 
+  <section id="experience" class="container">
+    <h2>Experience</h2>
+    <div class="job">
+      <h3>Tech Support – DNEG Ltd.</h3>
+      <p><em>Aug 2024 – Present | Pyrmont, Australia</em></p>
+      <ul>
+        <li>Supported Linux systems (EL7/EL8), VMware, and automation tools (Salt, Bash, Python)</li>
+        <li>Provided global Level 1 & 2 support via Jira and managed Kandji MDM</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Assistant Department Manager – Woolworths Group Ltd.</h3>
+      <p><em>Feb 2024 – Aug 2024 | Brookvale, Australia</em></p>
+      <ul>
+        <li>Supervised inventory & trained staff, reducing waste by 10%</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Intern Information Security Analyst – Barnardos Australia</h3>
+      <p><em>Jul 2023 – Sep 2023 | Ultimo, Australia</em></p>
+      <ul>
+        <li>Aligned security policies with ISO 27001, reducing incidents by 15%</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>IT Support Officer – Southern Cross School of Business</h3>
+      <p><em>Mar 2022 – Jul 2023 | Parramatta, Australia</em></p>
+      <ul>
+        <li>Resolved 80% of IT issues within 24 hours and cut downtime by 50%</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Software Developer – Diagonal Technology</h3>
+      <p><em>Jun 2019 – Dec 2021 | Kathmandu, Nepal</em></p>
+      <ul>
+        <li>Developed CRM and web apps using React, Node.js, PHP, and MySQL</li>
+      </ul>
+    </div>
+  </section>
+
   <section id="projects" class="container">
-    <h2>Key Achievements</h2>
+    <h2>Projects</h2>
     <ul class="projects">
-      <li>
-        <strong>Southern Cross School of Business:</strong> Reduced IT issue downtime by 50% and infrastructure cost by 15%.
-      </li>
-      <li>
-        <strong>Barnardos Australia:</strong> Integrated ISO27001 policies in 12 weeks, reducing security incidents by 15%.
-      </li>
-      <li>
-        <strong>Woolworths Group:</strong> Improved stock rotation, reducing waste by 10% and enhancing inventory accuracy.
-      </li>
+      <li>✅ Configured EC2 Linux instance with IAM policies, MFA & SSH</li>
+      <li>✅ Hosted static website on Amazon S3 with public access controls</li>
+      <li>✅ Designed 2-tier secure AWS network using VPC, subnets, NAT & Bastion Host</li>
+      <li>✅ Documented setup and demo on GitHub</li>
     </ul>
   </section>
+
+  <section id="badges" class="container">
+    <h2>Tools & Certifications</h2>
+    <div class="badges">
+      <img src="images/aws.png" alt="AWS" title="Amazon Web Services" />
+      <img src="images/azure.png" alt="Azure" title="Microsoft Azure AZ-900" />
+      <a href="https://github.com/Anuzshakya007" ><img src="images/git.png" alt="Git" title="Git Version Control" /></a>
+    </div>
+  </section>
+  
 
   <section id="contact" class="container">
     <h2>Contact</h2>
@@ -124,7 +196,7 @@ footer {
 
   <footer>
     <div class="container">
-      <p>© 2025 Anuj Shakya. All rights reserved.</p>
+      <p>© 2025 Anuj Shakya | Microsoft Azure Fundamentals Certified</p>
     </div>
   </footer>
 </body>
